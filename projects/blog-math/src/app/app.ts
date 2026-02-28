@@ -1,12 +1,18 @@
-import { Component, signal } from '@angular/core';
+import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { HeaderComponent } from './layout/header.component';
+import { FooterComponent } from './layout/footer.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
-  templateUrl: './app.html',
-  styleUrl: './app.css'
+  imports: [RouterOutlet, HeaderComponent, FooterComponent],
+  template: `
+    <app-header />
+    <main>
+      <router-outlet />
+    </main>
+    <app-footer />
+  `,
+  styles: `main { min-height: calc(100vh - 64px - 200px); }`,
 })
-export class App {
-  protected readonly title = signal('blog-math');
-}
+export class App {}

@@ -1,1 +1,55 @@
-/* You can add global styles to this file, and also import other style files */
+/* Global styles for 数学の森 */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'Noto Sans JP', -apple-system, 'Segoe UI', sans-serif;
+  color: #1e293b;
+  background: #f8fafc;
+  -webkit-font-smoothing: antialiased;
+}
+a { color: inherit; }
+img { max-width: 100%; display: block; }
+
+/* Content styles for rich HTML */
+.teacher-tip {
+  background: linear-gradient(135deg, #eef2ff, #faf5ff);
+  border-left: 4px solid #6366f1;
+  border-radius: 12px;
+  padding: 20px 24px;
+  margin: 24px 0;
+  font-size: 0.95rem;
+  line-height: 1.8;
+}
+.teacher-tip strong {
+  color: #4338ca;
+}
+.example-box {
+  background: #f0fdf4;
+  border: 1px solid #bbf7d0;
+  border-radius: 12px;
+  padding: 20px 24px;
+  margin: 20px 0;
+  line-height: 1.8;
+}
+.example-box.formula {
+  background: #fffbeb;
+  border-color: #fde68a;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+.example-box strong {
+  color: #059669;
+}
+h3 {
+  margin-top: 28px;
+  margin-bottom: 12px;
+  font-size: 1.15rem;
+}
+p + p { margin-top: 12px; }
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: #f1f5f9; }
+::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
