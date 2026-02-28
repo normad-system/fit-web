@@ -1,0 +1,214 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "version": 1,
+  "cli": {
+    "packageManager": "npm"
+  },
+  "newProjectRoot": "projects",
+  "projects": {
+    "promo": {
+      "projectType": "application",
+      "schematics": {},
+      "root": "projects/promo",
+      "sourceRoot": "projects/promo/src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular/build:application",
+          "options": {
+            "browser": "projects/promo/src/main.ts",
+            "tsConfig": "projects/promo/tsconfig.app.json",
+            "assets": [
+              {
+                "glob": "**/*",
+                "input": "projects/promo/public"
+              }
+            ],
+            "styles": [
+              "projects/promo/src/styles.css"
+            ],
+            "server": "projects/promo/src/main.server.ts",
+            "outputMode": "server",
+            "ssr": {
+              "entry": "projects/promo/src/server.ts"
+            }
+          },
+          "configurations": {
+            "production": {
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "500kB",
+                  "maximumError": "1MB"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "4kB",
+                  "maximumError": "8kB"
+                }
+              ],
+              "outputHashing": "all"
+            },
+            "development": {
+              "optimization": false,
+              "extractLicenses": false,
+              "sourceMap": true
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "serve": {
+          "builder": "@angular/build:dev-server",
+          "configurations": {
+            "production": {
+              "buildTarget": "promo:build:production"
+            },
+            "development": {
+              "buildTarget": "promo:build:development"
+            }
+          },
+          "defaultConfiguration": "development"
+        },
+        "test": {
+          "builder": "@angular/build:unit-test"
+        }
+      }
+    },
+    "blog-math": {
+      "projectType": "application",
+      "schematics": {},
+      "root": "projects/blog-math",
+      "sourceRoot": "projects/blog-math/src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular/build:application",
+          "options": {
+            "browser": "projects/blog-math/src/main.ts",
+            "tsConfig": "projects/blog-math/tsconfig.app.json",
+            "assets": [
+              {
+                "glob": "**/*",
+                "input": "projects/blog-math/public"
+              }
+            ],
+            "styles": [
+              "projects/blog-math/src/styles.css"
+            ],
+            "server": "projects/blog-math/src/main.server.ts",
+            "outputMode": "server",
+            "ssr": {
+              "entry": "projects/blog-math/src/server.ts"
+            }
+          },
+          "configurations": {
+            "production": {
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "500kB",
+                  "maximumError": "1MB"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "4kB",
+                  "maximumError": "8kB"
+                }
+              ],
+              "outputHashing": "all"
+            },
+            "development": {
+              "optimization": false,
+              "extractLicenses": false,
+              "sourceMap": true
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "serve": {
+          "builder": "@angular/build:dev-server",
+          "configurations": {
+            "production": {
+              "buildTarget": "blog-math:build:production"
+            },
+            "development": {
+              "buildTarget": "blog-math:build:development"
+            }
+          },
+          "defaultConfiguration": "development"
+        },
+        "test": {
+          "builder": "@angular/build:unit-test"
+        }
+      }
+    },
+    "blog-calculator": {
+      "projectType": "application",
+      "schematics": {},
+      "root": "projects/blog-calculator",
+      "sourceRoot": "projects/blog-calculator/src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular/build:application",
+          "options": {
+            "browser": "projects/blog-calculator/src/main.ts",
+            "tsConfig": "projects/blog-calculator/tsconfig.app.json",
+            "assets": [
+              {
+                "glob": "**/*",
+                "input": "projects/blog-calculator/public"
+              }
+            ],
+            "styles": [
+              "projects/blog-calculator/src/styles.css"
+            ],
+            "server": "projects/blog-calculator/src/main.server.ts",
+            "outputMode": "server",
+            "ssr": {
+              "entry": "projects/blog-calculator/src/server.ts"
+            }
+          },
+          "configurations": {
+            "production": {
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "500kB",
+                  "maximumError": "1MB"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "4kB",
+                  "maximumError": "8kB"
+                }
+              ],
+              "outputHashing": "all"
+            },
+            "development": {
+              "optimization": false,
+              "extractLicenses": false,
+              "sourceMap": true
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "serve": {
+          "builder": "@angular/build:dev-server",
+          "configurations": {
+            "production": {
+              "buildTarget": "blog-calculator:build:production"
+            },
+            "development": {
+              "buildTarget": "blog-calculator:build:development"
+            }
+          },
+          "defaultConfiguration": "development"
+        },
+        "test": {
+          "builder": "@angular/build:unit-test"
+        }
+      }
+    }
+  }
+}

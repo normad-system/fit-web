@@ -1,0 +1,14 @@
+node_modules
+dist
+.git
+.gitignore
+*.md
+coverage
+.vscode
+.idea
+.angular
+.claude
+.cursor
+.gemini
+.junie
+.windsurf
