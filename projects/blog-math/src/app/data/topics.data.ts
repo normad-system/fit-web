@@ -513,6 +513,116 @@ export const TOPICS: MathTopic[] = [
       </div>
     `,
   },
+  {
+    slug: 'plane-figures',
+    title: '平面図形（作図と移動）',
+    grade: 'junior-1',
+    summary: 'コンパスと定規を使った作図、図形の対称性と移動を学ぼう。',
+    keywords: ['作図', '垂直二等分線', '角の二等分線', '対称', '移動'],
+    order: 3,
+    content: `
+      <h2>📐 基本の作図</h2>
+      <p>中学校の作図では、<strong>コンパスと定規（目盛りなし）</strong>だけで図形をかきます。</p>
+
+      <h3>3つの基本作図</h3>
+      <div class="example-box">
+        <p>① <strong>垂直二等分線</strong>：線分の真ん中を通り、垂直に交わる直線</p>
+        <p>② <strong>角の二等分線</strong>：角をちょうど半分に分ける直線</p>
+        <p>③ <strong>垂線</strong>：ある点から直線に垂直な線を引く</p>
+      </div>
+
+      <h3>図形の移動</h3>
+      <p>図形は動かしても形と大きさは変わりません。移動には3種類あります。</p>
+      <div class="example-box">
+        <p>🔄 <strong>平行移動</strong>：同じ方向に同じ距離だけずらす</p>
+        <p>🪞 <strong>対称移動（線対称）</strong>：ある直線を軸にして裏返す</p>
+        <p>🔃 <strong>回転移動</strong>：ある点を中心に一定の角度だけ回す</p>
+      </div>
+
+      <h3>対称な図形</h3>
+      <ul>
+        <li><strong>線対称</strong>：折り目（対称の軸）で折ると重なる図形</li>
+        <li><strong>点対称</strong>：ある点を中心に180°回すと重なる図形</li>
+      </ul>
+
+      <div class="teacher-tip">
+        <p>👩‍🏫 <strong>先生のポイント：</strong>作図の問題では「なぜそれで正しいか」を説明できることが大事です。垂直二等分線の作図は「2つの円の交点を結ぶ」がポイント！</p>
+      </div>
+    `,
+  },
+  {
+    slug: 'space-figures',
+    title: '空間図形',
+    grade: 'junior-1',
+    summary: '立体の名前・見取図・展開図・表面積と体積を学ぼう。',
+    keywords: ['空間図形', '角柱', '円柱', '角錐', '円錐', '球', '展開図'],
+    order: 4,
+    content: `
+      <h2>🧊 立体の種類</h2>
+      <p>空間にある立体にはさまざまな種類があります。</p>
+
+      <div class="example-box">
+        <p><strong>角柱</strong>：底面が多角形で、側面が長方形の立体（三角柱、四角柱…）</p>
+        <p><strong>円柱</strong>：底面が円の柱状の立体</p>
+        <p><strong>角錐</strong>：底面が多角形で、頂点が1つの立体（三角錐、四角錐…）</p>
+        <p><strong>円錐</strong>：底面が円で、頂点が1つの立体</p>
+        <p><strong>球</strong>：すべての面が曲面の丸い立体</p>
+      </div>
+
+      <h3>正多面体</h3>
+      <p>すべての面が同じ正多角形で、各頂点に同じ数の面が集まる立体。<strong>5種類だけ</strong>存在します。</p>
+      <div class="example-box">
+        <p>正四面体（正三角形×4）、正六面体（正方形×6＝サイコロ）、正八面体、正十二面体、正二十面体</p>
+      </div>
+
+      <h3>体積と表面積の公式</h3>
+      <div class="example-box formula">
+        <p><strong>角柱・円柱の体積</strong> ＝ 底面積 × 高さ</p>
+        <p><strong>角錐・円錐の体積</strong> ＝ 底面積 × 高さ × ⅓</p>
+        <p><strong>球の体積</strong> ＝ 4πr³/3</p>
+        <p><strong>球の表面積</strong> ＝ 4πr²</p>
+      </div>
+
+      <div class="teacher-tip">
+        <p>👩‍🏫 <strong>先生のポイント：</strong>錐（すい）の体積は柱の体積の3分の1。これは実験でも確認できます。円錐に水を3杯入れると同じ底面積・高さの円柱がちょうどいっぱいになります！</p>
+      </div>
+    `,
+  },
+  {
+    slug: 'data-frequency',
+    title: '資料の整理（度数分布と代表値）',
+    grade: 'junior-1',
+    summary: 'ヒストグラムの作り方、平均値・中央値・最頻値を学ぼう。',
+    keywords: ['度数分布', 'ヒストグラム', '平均値', '中央値', '最頻値', '代表値'],
+    order: 5,
+    content: `
+      <h2>📊 資料を整理しよう</h2>
+      <p>たくさんのデータを分かりやすくまとめる方法を学びましょう。</p>
+
+      <h3>度数分布表</h3>
+      <p>データをいくつかの<strong>階級</strong>（区間）に分けて、各階級に入るデータの個数（<strong>度数</strong>）を表にまとめたもの。</p>
+      <div class="example-box">
+        <p>テストの点数を10点ごとに区切る → 40〜50点：3人、50〜60点：7人、60〜70点：12人…</p>
+      </div>
+
+      <h3>ヒストグラム（柱状グラフ）</h3>
+      <p>度数分布表を棒グラフにしたもの。データの散らばりが一目でわかります。</p>
+
+      <h3>代表値</h3>
+      <div class="example-box">
+        <p><strong>平均値</strong>：データの合計 ÷ データの個数</p>
+        <p><strong>中央値（メジアン）</strong>：データを大きさの順に並べた真ん中の値</p>
+        <p><strong>最頻値（モード）</strong>：最も多く現れた値</p>
+      </div>
+
+      <h3>範囲（レンジ）</h3>
+      <p>最大値 − 最小値。データの散らばり具合を表します。</p>
+
+      <div class="teacher-tip">
+        <p>👩‍🏫 <strong>先生のポイント：</strong>平均値は極端な値に影響されやすい！年収のように偏りがあるデータでは中央値の方が実態に近いことが多いです。</p>
+      </div>
+    `,
+  },
 
   // ────────── 中学2年生 ──────────
   {
@@ -580,6 +690,80 @@ export const TOPICS: MathTopic[] = [
 
       <div class="teacher-tip">
         <p>👩‍🏫 <strong>先生のポイント：</strong>証明は「数学の作文」です。根拠→結論の流れを意識して、番号を振って整理すると、読みやすい証明になります。</p>
+      </div>
+    `,
+  },
+  {
+    slug: 'simultaneous-equations',
+    title: '連立方程式',
+    grade: 'junior-2',
+    summary: '2つの未知数、2つの式。加減法と代入法で解こう。',
+    keywords: ['連立方程式', '加減法', '代入法', '二元一次方程式'],
+    order: 3,
+    content: `
+      <h2>🔗 連立方程式とは？</h2>
+      <p>2つの文字（x, y）を含む2つの方程式を組み合わせて、両方を同時に満たす値を求めます。</p>
+
+      <h3>解き方① 加減法</h3>
+      <p>2つの式を足したり引いたりして、一方の文字を消します。</p>
+      <div class="example-box">
+        <p>2x + y = 7 …①</p>
+        <p>x − y = 2 …②</p>
+        <p>①＋② → 3x = 9 → x = 3</p>
+        <p>x = 3 を①に代入 → y = 1</p>
+        <p>答え：<strong>x = 3, y = 1</strong></p>
+      </div>
+
+      <h3>解き方② 代入法</h3>
+      <p>一方の式からxまたはyの式を作り、もう一方に代入します。</p>
+      <div class="example-box">
+        <p>y = 2x + 1 …①</p>
+        <p>3x + y = 11 …②</p>
+        <p>②に①を代入 → 3x + (2x + 1) = 11</p>
+        <p>5x = 10 → x = 2、y = 5</p>
+      </div>
+
+      <div class="teacher-tip">
+        <p>👩‍🏫 <strong>先生のポイント：</strong>どちらの方法が計算しやすいかは問題次第。「一方の文字の係数が同じ・または1」なら楽に消せます。両方できるようにしておきましょう。</p>
+      </div>
+    `,
+  },
+  {
+    slug: 'probability-basics',
+    title: '確率の基本',
+    grade: 'junior-2',
+    summary: '起こりやすさを数で表そう。樹形図や表を使って求める確率。',
+    keywords: ['確率', '樹形図', '場合の数', '同様に確からしい'],
+    order: 4,
+    content: `
+      <h2>🎲 確率とは？</h2>
+      <p>ある事柄の起こりやすさを<strong>0から1の数</strong>で表したものが確率です。</p>
+
+      <div class="example-box formula">
+        <p><strong>確率 ＝ ある事柄の起こる場合の数 ÷ すべての場合の数</strong></p>
+      </div>
+
+      <h3>確率の基本</h3>
+      <ul>
+        <li>必ず起こる → 確率 = 1</li>
+        <li>絶対に起こらない → 確率 = 0</li>
+        <li>確率は 0 ≦ p ≦ 1 の範囲</li>
+      </ul>
+
+      <h3>樹形図で場合を数える</h3>
+      <div class="example-box">
+        <p>コインを2枚投げるとき</p>
+        <p>1枚目：表 → 2枚目：表 or 裏</p>
+        <p>1枚目：裏 → 2枚目：表 or 裏</p>
+        <p>全部で <strong>4通り</strong>。2枚とも表は1通り。</p>
+        <p>確率 ＝ 1/4 ＝ <strong>0.25</strong></p>
+      </div>
+
+      <h3>「同様に確からしい」が条件</h3>
+      <p>確率の計算では、どの結果も同じ起こりやすさであることが前提です。サイコロの各目が出る確率はそれぞれ1/6。</p>
+
+      <div class="teacher-tip">
+        <p>👩‍🏫 <strong>先生のポイント：</strong>「少なくとも1つは〜」の確率は、余事象（1 − 起こらない確率）を使うと楽に解けます。この考え方は高校でも大活躍しますよ！</p>
       </div>
     `,
   },
@@ -653,6 +837,182 @@ export const TOPICS: MathTopic[] = [
 
       <div class="teacher-tip">
         <p>👩‍🏫 <strong>先生のポイント：</strong>この定理は約2500年前にピタゴラスが証明したといわれています。中学最後にして最も大切な定理の一つです。高校数学でもずっと使いますよ！</p>
+      </div>
+    `,
+  },
+  {
+    slug: 'expansion-factoring',
+    title: '式の展開と因数分解',
+    grade: 'junior-3',
+    summary: '乗法公式を使った展開と、逆演算の因数分解をマスターしよう。',
+    keywords: ['展開', '因数分解', '乗法公式', '多項式'],
+    order: 3,
+    content: `
+      <h2>📝 式の展開</h2>
+      <p>かっこをはずして、足し算・引き算の形にすることを<strong>展開</strong>といいます。</p>
+
+      <h3>乗法公式</h3>
+      <div class="example-box formula">
+        <p><strong>(a + b)² = a² + 2ab + b²</strong></p>
+        <p><strong>(a − b)² = a² − 2ab + b²</strong></p>
+        <p><strong>(a + b)(a − b) = a² − b²</strong></p>
+        <p><strong>(x + a)(x + b) = x² + (a+b)x + ab</strong></p>
+      </div>
+
+      <h3>因数分解</h3>
+      <p>展開の<strong>逆</strong>の操作です。多項式を積（かけ算）の形に変形します。</p>
+      <div class="example-box">
+        <p>x² + 5x + 6 = <strong>(x + 2)(x + 3)</strong></p>
+        <p>→ 足して5、かけて6になる2つの数は2と3</p>
+        <p>x² − 9 = <strong>(x + 3)(x − 3)</strong> ← a² − b² の公式</p>
+      </div>
+
+      <div class="teacher-tip">
+        <p>👩‍🏫 <strong>先生のポイント：</strong>因数分解は「足してp、かけてq」のペアを見つけるのがカギ。展開で検算する習慣をつけましょう。高校入試の超頻出テーマです！</p>
+      </div>
+    `,
+  },
+  {
+    slug: 'square-roots',
+    title: '平方根',
+    grade: 'junior-3',
+    summary: '√（ルート）の意味と計算方法を学ぼう。有理数と無理数の違いも。',
+    keywords: ['平方根', 'ルート', '√', '有理数', '無理数'],
+    order: 4,
+    content: `
+      <h2>√ 平方根とは？</h2>
+      <p>2乗して a になる数を、a の<strong>平方根</strong>といいます。</p>
+
+      <div class="example-box">
+        <p>9の平方根 → 3 と −3（3² = 9, (−3)² = 9）</p>
+        <p>2の平方根 → √2 と −√2</p>
+        <p>√2 ≈ 1.41421356…（割り切れない！）</p>
+      </div>
+
+      <h3>有理数と無理数</h3>
+      <ul>
+        <li><strong>有理数</strong>：分数で表せる数（整数・有限小数・循環小数）</li>
+        <li><strong>無理数</strong>：分数で表せない数（√2, √3, π など）</li>
+      </ul>
+
+      <h3>ルートの計算</h3>
+      <div class="example-box formula">
+        <p>√a × √b = √(ab)　例：√2 × √3 = √6</p>
+        <p>√a ÷ √b = √(a/b)　例：√12 ÷ √3 = √4 = 2</p>
+        <p>√12 = √(4×3) = 2√3（根号の中をできるだけ小さくする）</p>
+      </div>
+
+      <h3>分母の有理化</h3>
+      <div class="example-box">
+        <p>1/√3 = 1/√3 × √3/√3 = <strong>√3/3</strong></p>
+      </div>
+
+      <div class="teacher-tip">
+        <p>👩‍🏫 <strong>先生のポイント：</strong>√の中身を素因数分解すると、ルートを簡単にできます。√50 = √(25×2) = 5√2。テストでは「最も簡単な形にせよ」が定番です。</p>
+      </div>
+    `,
+  },
+  {
+    slug: 'quadratic-function-intro',
+    title: '関数 y = ax²',
+    grade: 'junior-3',
+    summary: '中学で初めて登場する2乗の関数。放物線のグラフを学ぼう。',
+    keywords: ['二次関数', 'y=ax²', '放物線', 'グラフ', '変化の割合'],
+    order: 5,
+    content: `
+      <h2>📈 関数 y = ax²</h2>
+      <p>xの2乗に比例する関数です。グラフは<strong>放物線</strong>になります。</p>
+
+      <div class="example-box">
+        <p>y = x²：(0,0), (1,1), (2,4), (3,9), (−1,1), (−2,4)</p>
+        <p>→ 原点を通り、左右対称のU字型カーブ</p>
+      </div>
+
+      <h3>グラフの特徴</h3>
+      <ul>
+        <li><strong>a > 0</strong>のとき：上に開く（下に凸）</li>
+        <li><strong>a < 0</strong>のとき：下に開く（上に凸）</li>
+        <li>|a| が大きいほどグラフは<strong>細く</strong>、小さいほど<strong>広がる</strong></li>
+        <li>グラフは<strong>y軸について対称</strong></li>
+      </ul>
+
+      <h3>変化の割合</h3>
+      <div class="example-box">
+        <p>y = x² で xが1から3に変わるとき</p>
+        <p>変化の割合 = (9 − 1)/(3 − 1) = 8/2 = <strong>4</strong></p>
+        <p>一次関数と違い、変化の割合は<strong>一定ではない</strong>！</p>
+      </div>
+
+      <div class="teacher-tip">
+        <p>👩‍🏫 <strong>先生のポイント：</strong>y = ax² の変化の割合は a(p+q) で求められます（xがpからqに変わるとき）。この公式を覚えると計算が速くなりますよ。</p>
+      </div>
+    `,
+  },
+  {
+    slug: 'similarity',
+    title: '相似な図形',
+    grade: 'junior-3',
+    summary: '形が同じで大きさが違う図形。相似条件・相似比を学ぼう。',
+    keywords: ['相似', '相似比', '相似条件', '面積比', '体積比'],
+    order: 6,
+    content: `
+      <h2>🔍 相似とは？</h2>
+      <p>形は同じで大きさが異なる2つの図形を<strong>相似</strong>といいます。記号は<strong>∽</strong>。</p>
+
+      <h3>三角形の相似条件（3つ）</h3>
+      <div class="example-box">
+        <p>① <strong>3組の辺の比がすべて等しい</strong></p>
+        <p>② <strong>2組の辺の比とその間の角がそれぞれ等しい</strong></p>
+        <p>③ <strong>2組の角がそれぞれ等しい</strong>（よく使う！）</p>
+      </div>
+
+      <h3>相似比と面積比・体積比</h3>
+      <div class="example-box formula">
+        <p>相似比が m : n のとき</p>
+        <p><strong>面積比 = m² : n²</strong></p>
+        <p><strong>体積比 = m³ : n³</strong></p>
+        <p>例：相似比2:3 → 面積比4:9、体積比8:27</p>
+      </div>
+
+      <h3>中点連結定理</h3>
+      <div class="example-box">
+        <p>三角形の2辺の中点を結ぶ線分は、残りの辺に<strong>平行</strong>で、長さは<strong>半分</strong>。</p>
+      </div>
+
+      <div class="teacher-tip">
+        <p>👩‍🏫 <strong>先生のポイント：</strong>相似の問題では「2組の角が等しい」条件が最もよく使われます。平行線があれば錯角・同位角を探して、相似の三角形を見つけましょう。</p>
+      </div>
+    `,
+  },
+  {
+    slug: 'inscribed-angle',
+    title: '円周角の定理',
+    grade: 'junior-3',
+    summary: '円周角は中心角の半分！円と角度の美しい関係を学ぼう。',
+    keywords: ['円周角', '中心角', '円', '弧', '定理'],
+    order: 7,
+    content: `
+      <h2>⭕ 円周角の定理</h2>
+      <p>円の同じ弧に対する<strong>円周角</strong>は<strong>中心角の半分</strong>です。</p>
+
+      <div class="example-box formula">
+        <p><strong>円周角 = 中心角 × ½</strong></p>
+        <p>同じ弧に対する円周角は、円周上のどこにとっても<strong>等しい</strong></p>
+      </div>
+
+      <h3>重要な性質</h3>
+      <div class="example-box">
+        <p>🔵 半円（直径）に対する円周角 = <strong>90°</strong></p>
+        <p>→ 直径の上に三角形を作ると、必ず直角三角形になる！</p>
+      </div>
+
+      <h3>円に内接する四角形</h3>
+      <div class="example-box">
+        <p>円に内接する四角形の<strong>対角の和 = 180°</strong></p>
+      </div>
+
+      <div class="teacher-tip">
+        <p>👩‍🏫 <strong>先生のポイント：</strong>「半円の弧に対する円周角は90°」は非常に便利な性質です。直角が出てきたら、円が隠れていないか考えましょう。図形の証明問題で大活躍します。</p>
       </div>
     `,
   },
@@ -759,6 +1119,159 @@ export const TOPICS: MathTopic[] = [
       </div>
     `,
   },
+  {
+    slug: 'numbers-expressions',
+    title: '数と式（展開・因数分解・不等式）',
+    grade: 'high-1',
+    summary: '高校レベルの展開・因数分解と、一次不等式の解き方を学ぼう。',
+    keywords: ['展開', '因数分解', '不等式', '実数', '絶対値'],
+    order: 4,
+    content: `
+      <h2>📝 高校の「数と式」</h2>
+      <p>中学で学んだ展開・因数分解をさらに発展させます。</p>
+
+      <h3>3乗の公式</h3>
+      <div class="example-box formula">
+        <p>(a + b)³ = a³ + 3a²b + 3ab² + b³</p>
+        <p>(a − b)³ = a³ − 3a²b + 3ab² − b³</p>
+        <p>a³ + b³ = (a + b)(a² − ab + b²)</p>
+        <p>a³ − b³ = (a − b)(a² + ab + b²)</p>
+      </div>
+
+      <h3>一次不等式</h3>
+      <div class="example-box">
+        <p>3x − 2 > 7</p>
+        <p>3x > 9</p>
+        <p>x > 3</p>
+        <p>⚠️ <strong>負の数でかけ算・わり算すると不等号の向きが逆転</strong>！</p>
+        <p>−2x > 6 → x < −3</p>
+      </div>
+
+      <h3>絶対値を含む方程式・不等式</h3>
+      <div class="example-box">
+        <p>|x − 3| = 5 → x − 3 = ±5 → x = 8 または x = −2</p>
+        <p>|x| < 3 → −3 < x < 3（距離が3未満）</p>
+      </div>
+
+      <div class="teacher-tip">
+        <p>👩‍🏫 <strong>先生のポイント：</strong>不等式で最も多いミスは「負の数をかけたとき不等号を逆にし忘れる」こと。常に意識しましょう。また、「数直線で解を図示する」練習をすると理解が深まります。</p>
+      </div>
+    `,
+  },
+  {
+    slug: 'sets-propositions',
+    title: '集合と命題',
+    grade: 'high-1',
+    summary: '集合の記号、「ならば」の論理、対偶を使った証明を学ぼう。',
+    keywords: ['集合', '命題', '対偶', '逆', '裏', '必要条件', '十分条件'],
+    order: 5,
+    content: `
+      <h2>🔵 集合</h2>
+      <p>ものの集まりを<strong>集合</strong>、その一つ一つを<strong>要素</strong>といいます。</p>
+
+      <div class="example-box">
+        <p>A = {1, 2, 3, 4, 5}、B = {2, 4, 6, 8}</p>
+        <p><strong>A ∩ B</strong>（共通部分）= {2, 4}</p>
+        <p><strong>A ∪ B</strong>（和集合）= {1, 2, 3, 4, 5, 6, 8}</p>
+        <p><strong>Ā</strong>（補集合）= 全体集合のうちAに含まれない要素</p>
+      </div>
+
+      <h3>命題と条件</h3>
+      <p>真（正しい）か偽（正しくない）かが定まる文を<strong>命題</strong>といいます。</p>
+      <div class="example-box">
+        <p>「p ⇒ q」（pならばq）が命題。</p>
+        <p><strong>逆</strong>：q ⇒ p　<strong>裏</strong>：¬p ⇒ ¬q　<strong>対偶</strong>：¬q ⇒ ¬p</p>
+        <p>⭐ <strong>もとの命題と対偶の真偽は一致する</strong>（超重要！）</p>
+      </div>
+
+      <h3>必要条件と十分条件</h3>
+      <div class="example-box">
+        <p>「p ⇒ q」が真のとき</p>
+        <p>pは qの<strong>十分条件</strong>（pがあればqは十分）</p>
+        <p>qは pの<strong>必要条件</strong>（qがなければpもない）</p>
+      </div>
+
+      <div class="teacher-tip">
+        <p>👩‍🏫 <strong>先生のポイント：</strong>直接証明が難しいときは<strong>対偶を証明</strong>する方法が有効です。「nが偶数でないならばn²は偶数でない」→ 対偶「n²が偶数ならばnは偶数」で証明！</p>
+      </div>
+    `,
+  },
+  {
+    slug: 'data-analysis',
+    title: 'データの分析',
+    grade: 'high-1',
+    summary: '分散・標準偏差・相関係数でデータの特徴をつかもう。',
+    keywords: ['分散', '標準偏差', '散布図', '相関係数', 'データの分析'],
+    order: 6,
+    content: `
+      <h2>📊 データの分析</h2>
+      <p>中学で学んだ代表値に加えて、<strong>散らばり</strong>と<strong>相関</strong>を数値で表す方法を学びます。</p>
+
+      <h3>分散と標準偏差</h3>
+      <div class="example-box formula">
+        <p><strong>偏差</strong> = 各データ − 平均値</p>
+        <p><strong>分散</strong> = 偏差の2乗の平均 = (1/n)Σ(xᵢ − x̄)²</p>
+        <p><strong>標準偏差</strong> = √分散</p>
+      </div>
+      <p>標準偏差が大きいほど、データの<strong>散らばりが大きい</strong>。</p>
+
+      <h3>散布図と相関係数</h3>
+      <p>2つのデータの関係を調べるとき、<strong>散布図</strong>（各データを点で打つ）を作ります。</p>
+      <div class="example-box">
+        <p><strong>正の相関</strong>：一方が増えると他方も増える（右上がり）</p>
+        <p><strong>負の相関</strong>：一方が増えると他方は減る（右下がり）</p>
+        <p><strong>相関なし</strong>：ばらばらで傾向がない</p>
+      </div>
+
+      <div class="example-box formula">
+        <p><strong>相関係数 r</strong>（−1 ≦ r ≦ 1）</p>
+        <p>r ≈ 1 → 強い正の相関、r ≈ −1 → 強い負の相関、r ≈ 0 → 相関なし</p>
+      </div>
+
+      <div class="teacher-tip">
+        <p>👩‍🏫 <strong>先生のポイント：</strong>相関があっても「因果関係」があるとは限りません。アイスの売り上げと水難事故は相関しますが、原因は「気温」。これを<strong>疑似相関</strong>といいます。</p>
+      </div>
+    `,
+  },
+  {
+    slug: 'figure-properties',
+    title: '図形の性質（数学A）',
+    grade: 'high-1',
+    summary: '三角形の五心、円の性質、方べきの定理を学ぼう。',
+    keywords: ['五心', '重心', '外心', '内心', '方べきの定理', 'チェバ', 'メネラウス'],
+    order: 7,
+    content: `
+      <h2>📐 三角形の五心</h2>
+      <p>三角形には5つの重要な「心（中心）」があります。</p>
+
+      <div class="example-box">
+        <p><strong>重心 G</strong>：3本の中線の交点。各中線を2:1に内分。</p>
+        <p><strong>外心 O</strong>：3辺の垂直二等分線の交点。外接円の中心。</p>
+        <p><strong>内心 I</strong>：3つの角の二等分線の交点。内接円の中心。</p>
+        <p><strong>垂心 H</strong>：3本の垂線の交点。</p>
+        <p><strong>傍心</strong>：1つの内角と2つの外角の二等分線の交点。</p>
+      </div>
+
+      <h3>チェバの定理・メネラウスの定理</h3>
+      <div class="example-box formula">
+        <p><strong>チェバの定理</strong>：三角形ABCの頂点からの線分が1点で交わるとき</p>
+        <p>(AF/FB)·(BD/DC)·(CE/EA) = 1</p>
+        <p><strong>メネラウスの定理</strong>：直線が三角形の辺（またはその延長）と交わるとき</p>
+        <p>(AF/FB)·(BD/DC)·(CE/EA) = 1</p>
+      </div>
+
+      <h3>方べきの定理</h3>
+      <div class="example-box">
+        <p>円と2本の直線（弦や接線）に関して</p>
+        <p><strong>PA · PB = PC · PD</strong></p>
+        <p>接線の場合：<strong>PT² = PA · PB</strong></p>
+      </div>
+
+      <div class="teacher-tip">
+        <p>👩‍🏫 <strong>先生のポイント：</strong>五心は「何の交点か」をしっかり覚えましょう。外心は「3辺から等距離」、内心は「3辺に接する円の中心」とイメージすると理解しやすいです。</p>
+      </div>
+    `,
+  },
 
   // ────────── 高校2年（数Ⅱ・B）──────────
   {
@@ -855,6 +1368,170 @@ export const TOPICS: MathTopic[] = [
 
       <div class="teacher-tip">
         <p>👩‍🏫 <strong>先生のポイント：</strong>「次の項との差が一定→等差」「次の項との比が一定→等比」。まず差を取ってみて、一定でなければ比を調べましょう。</p>
+      </div>
+    `,
+  },
+  {
+    slug: 'trigonometric-functions',
+    title: '三角関数',
+    grade: 'high-2',
+    summary: '弧度法、三角関数のグラフ、加法定理をマスターしよう。',
+    keywords: ['三角関数', 'ラジアン', '弧度法', '加法定理', '周期'],
+    order: 4,
+    content: `
+      <h2>🌀 弧度法（ラジアン）</h2>
+      <p>高校では角度を<strong>ラジアン（rad）</strong>で表します。半径rの円で弧の長さがrになる角度が1ラジアン。</p>
+      <div class="example-box formula">
+        <p>180° = π rad、90° = π/2 rad、60° = π/3 rad、360° = 2π rad</p>
+      </div>
+
+      <h3>三角関数のグラフ</h3>
+      <p>sin, cos, tan を角度を自由に拡張した関数として扱います。</p>
+      <div class="example-box">
+        <p><strong>y = sin x</strong>：周期2π、振幅1の波形</p>
+        <p><strong>y = cos x</strong>：sinをπ/2左にずらした形</p>
+        <p><strong>y = tan x</strong>：周期π、漸近線あり</p>
+      </div>
+
+      <h3>加法定理</h3>
+      <div class="example-box formula">
+        <p>sin(α ± β) = sinα cosβ ± cosα sinβ</p>
+        <p>cos(α ± β) = cosα cosβ ∓ sinα sinβ</p>
+        <p>tan(α ± β) = (tanα ± tanβ)/(1 ∓ tanα tanβ)</p>
+      </div>
+
+      <h3>2倍角の公式</h3>
+      <div class="example-box formula">
+        <p>sin 2α = 2 sinα cosα</p>
+        <p>cos 2α = cos²α − sin²α = 2cos²α − 1 = 1 − 2sin²α</p>
+      </div>
+
+      <div class="teacher-tip">
+        <p>👩‍🏫 <strong>先生のポイント：</strong>加法定理はすべての三角関数の公式の源です。ここから2倍角・半角・合成公式が全て導けます。まず加法定理を完璧に覚えましょう！</p>
+      </div>
+    `,
+  },
+  {
+    slug: 'exponential-logarithmic',
+    title: '指数関数と対数関数',
+    grade: 'high-2',
+    summary: '指数の拡張、対数の定義、グラフの特徴を学ぼう。',
+    keywords: ['指数', '対数', 'log', '常用対数', '指数関数', '対数関数'],
+    order: 5,
+    content: `
+      <h2>📈 指数の拡張</h2>
+      <p>中学までの「整数乗」を<strong>有理数・実数</strong>に拡張します。</p>
+
+      <div class="example-box formula">
+        <p>a⁰ = 1　（aは0でない任意の数）</p>
+        <p>a⁻ⁿ = 1/aⁿ</p>
+        <p>a^(1/n) = ⁿ√a　（n乗根）</p>
+        <p>例：8^(1/3) = ³√8 = 2</p>
+      </div>
+
+      <h3>対数とは？</h3>
+      <p>「aを何乗したらbになるか」を表す数が<strong>対数</strong>です。</p>
+      <div class="example-box formula">
+        <p>aˣ = b ⟺ x = log_a b</p>
+        <p>例：2³ = 8 ⟺ log₂ 8 = 3</p>
+        <p>10² = 100 ⟺ log₁₀ 100 = 2</p>
+      </div>
+
+      <h3>対数の性質</h3>
+      <div class="example-box formula">
+        <p>log_a MN = log_a M + log_a N</p>
+        <p>log_a (M/N) = log_a M − log_a N</p>
+        <p>log_a Mᵏ = k log_a M</p>
+      </div>
+
+      <h3>常用対数</h3>
+      <p>底が10の対数を<strong>常用対数</strong>（log₁₀）といい、桁数の問題に活用します。</p>
+      <div class="example-box">
+        <p>2¹⁰ = 1024 は何桁？ → log₁₀ 1024 ≈ 3.01 → <strong>4桁</strong></p>
+      </div>
+
+      <div class="teacher-tip">
+        <p>👩‍🏫 <strong>先生のポイント：</strong>「対数 = 指数の逆」と理解すれば怖くありません。log₂ 8 は「2を何乗したら8？」→ 3。かけ算を足し算に変換できるのが対数の最大のメリットです。</p>
+      </div>
+    `,
+  },
+  {
+    slug: 'figures-equations',
+    title: '図形と方程式',
+    grade: 'high-2',
+    summary: '座標平面上で直線と円を方程式で扱おう。',
+    keywords: ['直線の方程式', '円の方程式', '点と直線の距離', '軌跡', '領域'],
+    order: 6,
+    content: `
+      <h2>📐 座標と図形</h2>
+      <p>図形を式（方程式）で表し、代数的に扱う分野です。</p>
+
+      <h3>直線の方程式</h3>
+      <div class="example-box formula">
+        <p>傾きmで点(x₁, y₁)を通る直線：<strong>y − y₁ = m(x − x₁)</strong></p>
+        <p>2点(x₁, y₁), (x₂, y₂)を通る直線：傾き m = (y₂−y₁)/(x₂−x₁)</p>
+      </div>
+
+      <h3>点と直線の距離</h3>
+      <div class="example-box formula">
+        <p>点(x₀, y₀)と直線 ax + by + c = 0 の距離：</p>
+        <p><strong>d = |ax₀ + by₀ + c| / √(a² + b²)</strong></p>
+      </div>
+
+      <h3>円の方程式</h3>
+      <div class="example-box formula">
+        <p>中心(a, b)、半径rの円：<strong>(x − a)² + (y − b)² = r²</strong></p>
+        <p>例：中心(2, −1)、半径3 → (x−2)² + (y+1)² = 9</p>
+      </div>
+
+      <h3>不等式の表す領域</h3>
+      <p>不等式を満たす点の集合が<strong>領域</strong>。直線や円で区切られた部分を塗りつぶします。</p>
+
+      <div class="teacher-tip">
+        <p>👩‍🏫 <strong>先生のポイント：</strong>「点と直線の距離」の公式は、円と直線の位置関係を調べるときに大活躍します。中心から直線までの距離と半径の大小で、交点の数がわかります。</p>
+      </div>
+    `,
+  },
+  {
+    slug: 'vectors',
+    title: 'ベクトル',
+    grade: 'high-2',
+    summary: '大きさと向きを持つ量「ベクトル」。成分表示と内積を学ぼう。',
+    keywords: ['ベクトル', '内積', '成分', '位置ベクトル', '平面ベクトル'],
+    order: 7,
+    content: `
+      <h2>➡️ ベクトルとは？</h2>
+      <p>ベクトルは<strong>大きさと向き</strong>を持つ量です。矢印で表します。</p>
+
+      <h3>ベクトルの演算</h3>
+      <div class="example-box">
+        <p>→a = (3, 2)、→b = (1, 4) のとき</p>
+        <p><strong>和</strong>：→a + →b = (4, 6)</p>
+        <p><strong>差</strong>：→a − →b = (2, −2)</p>
+        <p><strong>実数倍</strong>：2→a = (6, 4)</p>
+      </div>
+
+      <h3>内積</h3>
+      <div class="example-box formula">
+        <p><strong>→a · →b = |→a||→b| cos θ</strong></p>
+        <p>成分では：→a · →b = a₁b₁ + a₂b₂</p>
+        <p>例：(3,2)·(1,4) = 3×1 + 2×4 = 11</p>
+      </div>
+
+      <h3>ベクトルの垂直条件</h3>
+      <div class="example-box">
+        <p>→a ⊥ →b ⟺ <strong>→a · →b = 0</strong></p>
+      </div>
+
+      <h3>位置ベクトルと内分点</h3>
+      <div class="example-box formula">
+        <p>点A(→a)と点B(→b)をm:nに内分する点P：</p>
+        <p><strong>→p = (n→a + m→b) / (m + n)</strong></p>
+        <p>中点はm=n=1の特別な場合：→p = (→a + →b)/2</p>
+      </div>
+
+      <div class="teacher-tip">
+        <p>👩‍🏫 <strong>先生のポイント：</strong>ベクトルは物理でも大活躍します（力、速度はすべてベクトル）。内積 = 0 ⟺ 垂直 は非常に便利な道具なので、しっかりマスターしましょう。</p>
       </div>
     `,
   },
@@ -959,6 +1636,87 @@ export const TOPICS: MathTopic[] = [
 
       <div class="teacher-tip">
         <p>👩‍🏫 <strong>先生のポイント：</strong>複素数は電気工学や量子力学で実際に使われています。「虚数なんて現実に存在するの？」→ はい、交流回路の計算に不可欠です！</p>
+      </div>
+    `,
+  },
+  {
+    slug: 'integration-advanced',
+    title: '積分法（数学Ⅲ）',
+    grade: 'high-3',
+    summary: '置換積分・部分積分・体積・曲線の長さを学ぶ、数IIIの積分法。',
+    keywords: ['置換積分', '部分積分', '体積', '回転体', '曲線の長さ'],
+    order: 4,
+    content: `
+      <h2>📊 数Ⅲの積分法</h2>
+      <p>数Ⅱの積分を大幅に拡張し、さまざまな関数の積分と応用を学びます。</p>
+
+      <h3>置換積分法</h3>
+      <div class="example-box formula">
+        <p>∫ f(g(x))·g'(x) dx = ∫ f(t) dt　（t = g(x) と置換）</p>
+        <p>例：∫ 2x·cos(x²) dx → t = x² と置くと → sin(x²) + C</p>
+      </div>
+
+      <h3>部分積分法</h3>
+      <div class="example-box formula">
+        <p>∫ f(x)g'(x) dx = f(x)g(x) − ∫ f'(x)g(x) dx</p>
+        <p>例：∫ x·eˣ dx = x·eˣ − ∫ eˣ dx = x·eˣ − eˣ + C = (x−1)eˣ + C</p>
+      </div>
+
+      <h3>回転体の体積</h3>
+      <div class="example-box formula">
+        <p>y = f(x) をx軸のまわりに回転：<strong>V = π∫ₐᵇ {f(x)}² dx</strong></p>
+        <p>例：y = x（0≦x≦1）を回転 → V = π∫₀¹ x² dx = π/3</p>
+      </div>
+
+      <h3>曲線の長さ</h3>
+      <div class="example-box formula">
+        <p>L = ∫ₐᵇ √(1 + {f'(x)}²) dx</p>
+      </div>
+
+      <div class="teacher-tip">
+        <p>👩‍🏫 <strong>先生のポイント：</strong>置換積分は「合成関数の微分の逆」、部分積分は「積の微分の逆」。微分との双対関係を常に意識すると理解が深まります。</p>
+      </div>
+    `,
+  },
+  {
+    slug: 'conic-sections',
+    title: '二次曲線',
+    grade: 'high-3',
+    summary: '放物線・楕円・双曲線の方程式と幾何学的性質を学ぼう。',
+    keywords: ['放物線', '楕円', '双曲線', '焦点', '二次曲線', '離心率'],
+    order: 5,
+    content: `
+      <h2>🔭 二次曲線とは？</h2>
+      <p>円錐を平面で切ったときにできる曲線群です。<strong>放物線・楕円・双曲線</strong>の3種類があります。</p>
+
+      <h3>放物線</h3>
+      <div class="example-box formula">
+        <p><strong>y² = 4px</strong>（焦点(p, 0)、準線 x = −p）</p>
+        <p>焦点までの距離 = 準線までの距離</p>
+      </div>
+
+      <h3>楕円</h3>
+      <div class="example-box formula">
+        <p><strong>x²/a² + y²/b² = 1</strong>（a > b > 0）</p>
+        <p>2つの焦点 F₁, F₂ からの距離の和が一定（= 2a）</p>
+        <p>焦点：(±c, 0)　ただしc² = a² − b²</p>
+      </div>
+
+      <h3>双曲線</h3>
+      <div class="example-box formula">
+        <p><strong>x²/a² − y²/b² = 1</strong></p>
+        <p>2つの焦点からの距離の差が一定（= 2a）</p>
+        <p>漸近線：y = ±(b/a)x</p>
+      </div>
+
+      <h3>媒介変数表示と極座標</h3>
+      <div class="example-box">
+        <p>楕円の媒介変数表示：x = a cos t, y = b sin t</p>
+        <p>極座標：二次曲線は r = ed/(1 − e cos θ) で統一的に表せる</p>
+      </div>
+
+      <div class="teacher-tip">
+        <p>👩‍🏫 <strong>先生のポイント：</strong>楕円は惑星の軌道（ケプラーの法則）、放物線は投射体の軌道、双曲線はGPS測位に使われています。二次曲線は自然界に溢れているのです！</p>
       </div>
     `,
   },

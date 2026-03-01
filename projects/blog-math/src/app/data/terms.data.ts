@@ -46,4 +46,42 @@ export const TERMS: MathTerm[] = [
   { slug: 'junretsu', term: '順列', reading: 'じゅんれつ', definition: 'n個の中からr個を選んで一列に並べる方法の数。ₙPᵣ', example: '₅P₃ = 60', category: '確率・統計' },
   { slug: 'kumiawase', term: '組合せ', reading: 'くみあわせ', definition: 'n個の中からr個を選ぶ方法の数（順番は考えない）。ₙCᵣ', example: '₅C₃ = 10', category: '確率・統計' },
   { slug: 'heikin', term: '平均値', reading: 'へいきんち', definition: 'データの合計を個数で割った値。', example: '(70+80+90)/3 = 80', category: '確率・統計' },
+
+  // ── 図形（追加） ──
+  { slug: 'suichoku-nitoubunsen', term: '垂直二等分線', reading: 'すいちょくにとうぶんせん', definition: '線分の中点を通り、その線分に垂直な直線。2点から等距離にある点の集合。', category: '図形' },
+  { slug: 'seishi-mentai', term: '正多面体', reading: 'せいためんたい', definition: 'すべての面が合同な正多角形で、各頂点に集まる面の数が等しい立体。正四面体・正六面体・正八面体・正十二面体・正二十面体の5種類のみ。', example: 'サイコロ＝正六面体', category: '図形' },
+  { slug: 'enshukaku', term: '円周角', reading: 'えんしゅうかく', definition: '円周上の1点と弧の両端を結んでできる角。同じ弧に対する円周角は中心角の半分に等しい。', example: '半円の弧に対する円周角 = 90°', category: '図形' },
+  { slug: 'souji-hi', term: '相似比', reading: 'そうじひ', definition: '相似な図形の対応する辺の長さの比。相似比がm:nのとき、面積比はm²:n²、体積比はm³:n³。', example: '相似比2:3→面積比4:9', category: '図形' },
+  { slug: 'goshin', term: '五心', reading: 'ごしん', definition: '三角形に関する5つの中心（重心・外心・内心・垂心・傍心）の総称。', category: '図形' },
+  { slug: 'houbekino-teiri', term: '方べきの定理', reading: 'ほうべきのていり', definition: '円の外部または内部の点から引いた2本の直線（弦や接線）について、PA·PB = PC·PD が成り立つ定理。', category: '図形' },
+
+  // ── 数と式（追加） ──
+  { slug: 'renritsu', term: '連立方程式', reading: 'れんりつほうていしき', definition: '複数の方程式を同時に満たす解を求める問題。加減法と代入法で解く。', example: '2x+y=7, x−y=2 → x=3, y=1', category: '式と方程式' },
+  { slug: 'jouhou-koushiki', term: '乗法公式', reading: 'じょうほうこうしき', definition: '展開のための公式。(a+b)²=a²+2ab+b²、(a+b)(a−b)=a²−b²など。', category: '式と方程式' },
+  { slug: 'taigu', term: '対偶', reading: 'たいぐう', definition: '命題「p⇒q」に対して「¬q⇒¬p」のこと。もとの命題と対偶は必ず真偽が一致する。', category: '式と方程式' },
+
+  // ── 関数（追加） ──
+  { slug: 'kodobou', term: '弧度法', reading: 'こどほう', definition: '角度をラジアン（rad）という単位で表す方法。半径rの円弧の長さがrになる角が1ラジアン。180°= π rad。', example: '90° = π/2 rad', category: '関数' },
+  { slug: 'shisuu-kansuu', term: '指数関数', reading: 'しすうかんすう', definition: 'y = aˣ の形で表される関数（a > 0, a ≠ 1）。底aが1より大きければ単調増加。', example: 'y = 2ˣ', category: '関数' },
+  { slug: 'taisuu-kansuu', term: '対数関数', reading: 'たいすうかんすう', definition: 'y = log_a x の形で表される関数。指数関数の逆関数。', example: 'y = log₂ x', category: '関数' },
+  { slug: 'kahouteiiri', term: '加法定理', reading: 'かほうていり', definition: '三角関数の角度の和・差に関する公式。sin(α±β), cos(α±β), tan(α±β) を展開する。', example: 'sin(α+β)=sinα cosβ+cosα sinβ', category: '関数' },
+
+  // ── ベクトル ──
+  { slug: 'bekutoru', term: 'ベクトル', reading: 'べくとる', definition: '大きさと向きを持つ量。矢印で表し、成分表示では(a₁, a₂)のように書く。', example: '→a=(3,2)', category: '図形' },
+  { slug: 'naiseki', term: '内積', reading: 'ないせき', definition: '2つのベクトルの演算。→a·→b=|→a||→b|cosθ で定義される。成分ではa₁b₁+a₂b₂。内積が0のとき2ベクトルは垂直。', example: '(3,2)·(1,4) = 11', category: '図形' },
+
+  // ── 解析（追加） ──
+  { slug: 'chikan-sekibun', term: '置換積分', reading: 'ちかんせきぶん', definition: '変数を別の変数に置き換えて積分を簡単にする方法。合成関数の微分の逆。', example: '∫2x cos(x²)dx → t=x² と置換', category: '解析' },
+  { slug: 'bubun-sekibun', term: '部分積分', reading: 'ぶぶんせきぶん', definition: '積の微分公式を逆に利用する積分法。∫f g\'dx = fg − ∫f\'g dx。', example: '∫x eˣ dx = (x−1)eˣ + C', category: '解析' },
+
+  // ── 二次曲線 ──
+  { slug: 'daen', term: '楕円', reading: 'だえん', definition: '2つの焦点からの距離の和が一定となる点の軌跡。x²/a²+y²/b²=1 で表す。', example: '惑星の軌道は楕円', category: '図形' },
+  { slug: 'soukyokusen', term: '双曲線', reading: 'そうきょくせん', definition: '2つの焦点からの距離の差が一定となる点の軌跡。x²/a²−y²/b²=1 で表し、漸近線を持つ。', category: '図形' },
+
+  // ── 確率・統計（追加） ──
+  { slug: 'bunsan', term: '分散', reading: 'ぶんさん', definition: 'データの散らばり具合を表す指標。各データの偏差の2乗の平均。', example: 'σ² = (1/n)Σ(xᵢ − x̄)²', category: '確率・統計' },
+  { slug: 'hyoujun-hensa', term: '標準偏差', reading: 'ひょうじゅんへんさ', definition: '分散の正の平方根。データが平均からどの程度ばらついているかを元の単位で表す。', example: 'σ = √分散', category: '確率・統計' },
+  { slug: 'soukan-keisuu', term: '相関係数', reading: 'そうかんけいすう', definition: '2つの変数間の直線的関係の強さを−1から1で表す指標。', example: 'r ≈ 1（強い正の相関）', category: '確率・統計' },
+  { slug: 'chuuouchi', term: '中央値', reading: 'ちゅうおうち', definition: 'データを大きさの順に並べたとき真ん中にくる値。メジアンとも呼ぶ。', example: '1,3,5,7,9 の中央値は5', category: '確率・統計' },
+  { slug: 'saibinchi', term: '最頻値', reading: 'さいひんち', definition: 'データの中で最も多く出現する値。モードとも呼ぶ。', example: '1,2,2,3,5 の最頻値は2', category: '確率・統計' },
 ];
